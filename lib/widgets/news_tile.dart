@@ -25,10 +25,7 @@ class NewsTile extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(6),
           child: articalModel.image == null
-              ? const Placeholder(
-                  fallbackHeight: 200.0,
-                  fallbackWidth: 200.0,
-                )
+              ? Image.asset(width: 600, height: 200, 'assets/404_12.jpg')
               : GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(

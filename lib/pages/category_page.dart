@@ -9,10 +9,15 @@ class CategoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: CustomScrollView(
-      slivers: [
-        NewsListViewBuilder(category: category),
-      ],
-    ));
+      appBar: AppBar(title: Text(category)),
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+        child: CustomScrollView(
+          slivers: [
+            NewsListViewBuilder(category: category),
+          ],
+        ),
+      ),
+    );
   }
 }
