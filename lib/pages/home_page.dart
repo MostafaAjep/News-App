@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
               TextSpan(
                 text: 'NEWS',
                 style: TextStyle(
-                    color: Theme.of(context).textTheme.bodyLarge?.color),
+                    color: Theme.of(context).textTheme.titleLarge?.color),
               ),
               const TextSpan(
                 text: 'CLOUD',

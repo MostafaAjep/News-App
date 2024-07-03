@@ -31,4 +31,9 @@ final ThemeData darkTheme = ThemeData.dark().copyWith(
             color: Colors.white,
             fontSize: 16,
           ),
+          bodyLarge: const TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            fontSize: 16,
+          ),
         ));
