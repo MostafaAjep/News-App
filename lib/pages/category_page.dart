@@ -12,6 +12,7 @@ class CategoryPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(category),
         centerTitle: true,
+        surfaceTintColor: Colors.transparent,
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
