@@ -10,18 +10,20 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        surfaceTintColor: Colors.transparent,
         backgroundColor: Colors.transparent,
         elevation: 0,
         centerTitle: true,
         title: RichText(
-          text: const TextSpan(
-            style: TextStyle(fontWeight: FontWeight.bold),
+          text: TextSpan(
+            style: const TextStyle(fontWeight: FontWeight.bold),
             children: [
               TextSpan(
                 text: 'NEWS',
-                style: TextStyle(color: Colors.black),
+                style: TextStyle(
+                    color: Theme.of(context).textTheme.bodyLarge?.color),
               ),
-              TextSpan(
+              const TextSpan(
                 text: 'CLOUD',
                 style:
                     TextStyle(color: Colors.amber, fontWeight: FontWeight.bold),
